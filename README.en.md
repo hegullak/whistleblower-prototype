@@ -3,6 +3,7 @@
 **English** · [Norsk](README.md)
 
 Static information page for reporting concerns via [MittVarsel](https://portal.mittvarsel.no/) — aimed at sports clubs in the Norwegian Confederation of Sports (NIF). All page copy lives in HTML; club name, logo, MittVarsel URL, slogan and contacts are controlled from a single file: `club-config.js`.
+
 ---
 
 ## Contents
@@ -61,10 +62,12 @@ cd whistleblower-strict
 .\serve.ps1
 ```
 
-Open:
+Open (default port **4174** from `serve.ps1`):
 
-- Norwegian: [http://127.0.0.1:[port number]/](http://127.0.0.1:[port number]/)
-- English: [http://127.0.0.1:[port number]/en.html](http://127.0.0.1:[port number]/en.html)
+- Norwegian: [http://127.0.0.1:4174/](http://127.0.0.1:4174/)
+- English: [http://127.0.0.1:4174/en.html](http://127.0.0.1:4174/en.html)
+
+---
 
 ## Customise for a new club
 
@@ -248,7 +251,7 @@ After deploy: verify that `club-config.js` and `club-init.js` load (browser Netw
 |---------|----------|
 | Club name/contact not shown | Check that `club-config.js` and `club-init.js` load (status 200). Hard refresh: Ctrl+Shift+R |
 | Entire contact section empty | Often a syntax error in `club-config.js` (e.g. phone without quotes). Open the console (F12) |
-| Port 4174 in use | Stop the old server — see [If the port is in use](#if-the-port-is-in-use) |
+| Port 4174 in use | Stop the process listening on the port (see the error message from `serve.ps1`). Run only one `serve.ps1` at a time. |
 | Config changes not visible | Cache — use `serve.ps1` (no-cache) or hard refresh |
 | Email missing on card | Check that `email` is set in `contactPersons` and the file is saved |
 
