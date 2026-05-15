@@ -58,7 +58,7 @@ Siden forklarer hva varsling er, hva som kan varsles, hvordan man bruker MittVar
 ### Anbefalt (Windows)
 
 ```powershell
-cd whistleblower-strict
+cd whistleblower
 .\serve.ps1
 ```
 
