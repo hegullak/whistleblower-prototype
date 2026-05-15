@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en" data-theme="sport">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MittVarsel</title>
+    <link rel="icon" type="image/svg+xml" href="assets/froya-logo.svg" />
+    <link rel="alternate" hreflang="en" href="en.html" />
+    <link rel="alternate" hreflang="no" href="index.html" />
+    <link rel="stylesheet" href="styles.css?v=1.2.6" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="./">
+          <span class="brand__name" club="full-name"></span>
+        </a>
+        <nav class="lang-switcher" aria-label="Language">
+          <a class="lang-btn" href="index.html" hreflang="no" title="Norsk">
+            <svg class="flag" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <rect width="22" height="16" fill="#ED2939" />
+              <rect x="6" width="4" height="16" fill="#fff" />
+              <rect y="6" width="22" height="4" fill="#fff" />
+              <rect x="7" width="2" height="16" fill="#002868" />
+              <rect y="7" width="22" height="2" fill="#002868" />
+            </svg>
+            <span class="visually-hidden">Norsk</span>
+          </a>
+          <a class="lang-btn is-active" href="en.html" aria-current="page" hreflang="en" title="English">
+            <svg class="flag" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <clipPath id="ukClipEn">
+                <path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z" />
+              </clipPath>
+              <path d="M0,0 v30 h60 V0 z" fill="#012169" />
+              <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+              <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ukClipEn)" stroke="#C8102E" stroke-width="4" />
+              <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+              <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+            </svg>
+            <span class="visually-hidden">English</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-scroll" id="pageScroll">
+      <main class="container">
+        <section class="hero">
+          <div class="hero__title-row">
+            <img
+              class="hero__logo"
+              club-logo
+              src="assets/froya-logo.svg"
+              alt=""
+              width="72"
+              height="72"
+              decoding="async"
+            />
+            <h1>MittVarsel</h1>
+          </div>
+          <div class="hero__lead">
+            <span>Everyone should experience safety, respect and a sense of belonging.</span><br />
+            <span>If something isn't right – speak up.</span>
+          </div>
+          <a
+            class="cta"
+            href="#" club-mittvarsel
+            target="_blank"
+            rel="noopener noreferrer"
+            >Go to MittVarsel</a
+          >
+        </section>
+
+        <section class="section plain-block" aria-labelledby="what-is-heading">
+          <div class="block-header">
+            <span class="icon-bw" aria-hidden="true"
+              ><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                <path
+                  d="M9.5 9.5a2.5 2.5 0 1 1 4.2 1.8c-.7.8-1.7 1.2-1.7 2.7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="12" cy="17" r="1.2" fill="currentColor" />
+              </svg>
+            </span>
+            <h2 id="what-is-heading">What does it mean to raise a concern?</h2>
+          </div>
+          <div>
+            <p>
+              Raising a concern means speaking up about something that isn't right. Use the Norwegian Confederation of
+              Sports reporting portal
+              <a href="#" club-mittvarsel target="_blank" rel="noopener noreferrer">MittVarsel</a>. <br />
+              MittVarsel meets documentation requirements and ensures confidential handling.
+            </p>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="what-report-heading">
+          <details class="accordion" data-accordion-group="main">
+            <summary id="what-report-heading">
+              <span class="summary-main">
+                <span class="icon-bw" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                    <path
+                      d="M9.5 9.5a2.5 2.5 0 1 1 4.2 1.8c-.7.8-1.7 1.2-1.7 2.7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="12" cy="17" r="1.2" fill="currentColor" />
+                  </svg>
+                </span>
+                <span>What can be reported?</span>
+              </span>
+            </summary>
+            <div class="accordion-body accordion-body--viewport">
+              <p>
+                In Norwegian organized sport, raising a concern means reporting events or actions that have occurred in connection with sports, 
+                and that constitute a breach of
+                <a
+                  href="https://www.idrettsforbundet.no/idrettskrets/oslo/klubbdrift/lover-og-bestemmelser/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >the rules and guidelines governing sports</a
+                >.
+                <br /> Examples:
+              </p>
+              <ul>
+                <li>Bullying</li>
+                <li>Exclusion</li>
+                <li>Violence and threats</li>
+                <li>Sexual harassment or abuse</li>
+                <li>Racism/Discrimination</li>
+                <li>Unwanted behaviour from coaches, leaders or others</li>
+                <li>Concern for children or young people</li>
+              </ul>
+              <p><strong>It is important to contact the police if you suspect a criminal offence.</strong></p>
+            </div>
+          </details>
+
+          <details class="accordion" data-accordion-group="main">
+            <summary>
+              <span class="summary-main">
+                <span class="icon-bw" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                    <path
+                      d="M9.5 9.5a2.5 2.5 0 1 1 4.2 1.8c-.7.8-1.7 1.2-1.7 2.7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="12" cy="17" r="1.2" fill="currentColor" />
+                  </svg>
+                </span>
+                <span>What should a report include?</span>
+              </span>
+            </summary>
+            <div class="accordion-body accordion-body--viewport">
+              <p>To help us assist you as effectively as possible, make sure to include:</p>
+              <ul>
+                <li>What has happened</li>
+                <li>Who it concerns</li>
+                <li>Where and when it happened</li>
+                <li>Whether anyone else was present</li>
+              </ul>
+              <p>Be as specific as possible.</p>
+              <p>If the report concerns multiple incidents, describe each one separately.</p>
+              <p>If you have photos, messages or other documentation, you may attach them.</p>
+            </div>
+          </details>
+
+          <details class="accordion" data-accordion-group="main">
+            <summary id="how-can-i-report-heading">
+              <span class="summary-main">
+                <span class="icon-bw" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                    <path
+                      d="M9.5 9.5a2.5 2.5 0 1 1 4.2 1.8c-.7.8-1.7 1.2-1.7 2.7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="12" cy="17" r="1.2" fill="currentColor" />
+                  </svg>
+                </span>
+                <span>How can I raise a concern?</span>
+              </span>
+            </summary>
+            <div class="accordion-body accordion-body--viewport">
+              <p>
+                In the sports reporting portal
+                <a href="#" club-mittvarsel target="_blank" rel="noopener noreferrer">MittVarsel</a>
+                you have two options:
+              </p>
+              <ul>
+                <li>Report by name – you provide your contact details, sport and your role.</li>
+                <li>Report anonymously – you only provide the club and your role.</li>
+              </ul>
+              <p>In either case you can make audio recordings in the portal.</p>
+              <p>
+                <a class="cta" href="#" club-mittvarsel target="_blank" rel="noopener noreferrer"
+                  >Go to MittVarsel</a
+                >
+              </p>
+            </div>
+          </details>
+
+          <details class="accordion" data-accordion-group="main">
+            <summary id="what-happens-after-reporting-heading">
+              <span class="summary-main">
+                <span class="icon-bw" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                    <path
+                      d="M9.5 9.5a2.5 2.5 0 1 1 4.2 1.8c-.7.8-1.7 1.2-1.7 2.7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="12" cy="17" r="1.2" fill="currentColor" />
+                  </svg>
+                </span>
+                <span>What happens after I have reported?</span>
+              </span>
+            </summary>
+            <div class="accordion-body accordion-body--viewport">
+              <p>
+                <br />
+                <span club="short-name"></span> is notified when a new report has been submitted through NIF's
+                reporting portal. We have qualified casehandlers at
+                <span club="short-name"></span> who handle the case.
+              </p>
+              <ul>
+                <li>You receive a confirmation.</li>
+                <li>The case is assessed.</li>
+                <li>We follow up on what is necessary.</li>
+                <li>You receive further information (where possible).</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion" data-accordion-group="main">
+            <summary>
+              <span class="summary-main">
+                <span class="icon-bw" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                    <path
+                      d="M9.5 9.5a2.5 2.5 0 1 1 4.2 1.8c-.7.8-1.7 1.2-1.7 2.7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="12" cy="17" r="1.2" fill="currentColor" />
+                  </svg>
+                </span>
+                <span>What is not considered a concern?</span>
+              </span>
+            </summary>
+            <div class="accordion-body accordion-body--viewport">
+              <p>
+                You can raise concerns about most things, big or small. However, some matters are not treated as formal concerns, for example: 
+              </p>
+              <ul>
+                <li>
+                  Disagreement with decisions made in accordance with the rules and regulations governing sport.
+                </li>
+                <li>Sports-related disagreements, such as team selection and similar matters.</li>
+                <li>Matters reported that are not considered a breach of the rules and regulations of organised sport.</li>
+              </ul>
+            
+            </div>
+          </details>
+
+          <details class="accordion" data-accordion-group="main">
+            <summary>
+              <span class="summary-main">
+                <span class="icon-bw" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                    <path
+                      d="M9.5 9.5a2.5 2.5 0 1 1 4.2 1.8c-.7.8-1.7 1.2-1.7 2.7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="12" cy="17" r="1.2" fill="currentColor" />
+                  </svg>
+                </span>
+                <span>Do you have a concern you need help with?</span>
+              </span>
+            </summary>
+            <div class="accordion-body accordion-body--viewport">
+              <p>
+                If you have a concern that you would like to act upon, but that does not fit within the situations described here 
+                   - <a href="#" club-mail>contact us at <span club="short-name"></span></a> -
+                </strong>
+                and we will help you further. There should be a low threshold for raising a concern!
+              </p>
+            
+              <div class="concern-resources">
+                <p class="concern-resources__intro">Other organisations you can contact are:</p>
+                <div class="help-resource-grid">
+                  <article class="help-resource-card">
+                    <a
+                      class="help-resource-card__site"
+                      href="https://www.bufdir.no/barnevern/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class="help-resource-card__logo"
+                        src="https://www.bufdir.no/UI/Icons/android-icon-192x192.png"
+                        alt="Barnevernvakt"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </a>
+                    <p class="help-resource-card__name">Barnevernvakt</p>
+                    <div class="help-resource-card__contact">
+                      <p class="help-resource-card__meta">
+                        Phone: <a href="tel:+4755361180">55 36 11 80</a>
+                      </p>
+                      <p class="help-resource-card__meta">
+                        Web:
+                        <a
+                          class="help-resource-card__web"
+                          href="https://www.bufdir.no/barnevern/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >bufdir.no</a
+                        >
+                      </p>
+                    </div>
+                  </article>
+
+                  <article class="help-resource-card">
+                    <a
+                      class="help-resource-card__site"
+                      href="https://www.116111.no/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class="help-resource-card__logo"
+                        src="https://www.116111.no/-/img/logo_116111_new.svg"
+                        alt="Alarmtelefonen for barn og unge"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </a>
+                    <p class="help-resource-card__name">Alarmtelefonen for barn og unge</p>
+                    <div class="help-resource-card__contact">
+                      <p class="help-resource-card__meta">Phone: <a href="tel:116111">116 111</a></p>
+                      <p class="help-resource-card__meta">
+                        Web:
+                        <a
+                          class="help-resource-card__web"
+                          href="https://www.116111.no/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >116111.no</a
+                        >
+                      </p>
+                    </div>
+                  </article>
+
+                  <article class="help-resource-card">
+                    <a
+                      class="help-resource-card__site"
+                      href="https://www.korspahalsen.no/korspahalsen"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        class="help-resource-card__logo"
+                        src="https://www.rodekors.no/UI/logo_main.svg"
+                        alt="Kors på halsen"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </a>
+                    <p class="help-resource-card__name">Kors på halsen</p>
+                    <div class="help-resource-card__contact">
+                      <p class="help-resource-card__meta">Phone: <a href="tel:+4780033321">800 33 321</a></p>
+                      <p class="help-resource-card__meta">
+                        Web:
+                        <a
+                          class="help-resource-card__web"
+                          href="https://www.korspahalsen.no/korspahalsen"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >korspahalsen.no</a
+                        >
+                      </p>
+                    </div>
+                  </article>
+
+
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="accordion" data-accordion-group="main">
+            <summary id="unsure-heading">
+              <span class="summary-main">
+                <span class="icon-bw" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                    <path
+                      d="M9.5 9.5a2.5 2.5 0 1 1 4.2 1.8c-.7.8-1.7 1.2-1.7 2.7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="12" cy="17" r="1.2" fill="currentColor" />
+                  </svg>
+                </span>
+                <span>Are you not sure?</span>
+              </span>
+            </summary>
+            <div class="accordion-body accordion-body--viewport">
+              <p><strong>You don't need to be sure.</strong></p>
+              <p><strong>It's enough that something feels wrong.</strong></p>
+            </div>
+          </details>
+
+          <details class="accordion" data-accordion-group="main">
+            <summary id="contact-heading">
+              <span class="summary-main">
+                <span class="icon-bw" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" />
+                    <path
+                      d="M3 7l9 6 9-6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span>Contact</span>
+              </span>
+            </summary>
+            <div
+              class="accordion-body accordion-body--viewport contact-block contact-block--accordion plain-block">
+
+              <div club-contact></div>
+            </div>
+          </details>
+        </section>
+
+        <section class="section plain-block">
+          <p>
+            <strong
+              >Want to know more? Go to the Norwegian Confederation of Sports topic page
+              <a href="https://www.idrettsforbundet.no/tema/varsling/" target="_blank" rel="noopener noreferrer"
+                >here</a
+              >.</strong
+            >
+          </p>
+          <p>
+            <a class="cta" href="#" club-mittvarsel target="_blank" rel="noopener noreferrer">Go to MittVarsel</a>
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p id="footerSlogan" club-slogan></p>
+      </div>
+    </footer>
+
+    <script src="club-config.js?v=1.2.6"></script>
+    <script src="club-init.js?v=1.2.6"></script>
+    <script src="interactions.js?v=1.2.6" defer></script>
+  </body>
+</html>
