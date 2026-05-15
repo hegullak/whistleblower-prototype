@@ -14,7 +14,7 @@ window.CLUB_CONFIG = {
     "https://portal.mittvarsel.no/skjema/norges-idrettsforbund/SNPZOBQpD7CUt9Er.1532",
 
   /** Slagord i bunntekst. Tom streng "" skjuler teksten. */
-  "club-slogan": "FLEST MULIG, LENGST MULIG, BEST MULIG.",
+  clubSlogan: "FLEST MULIG, LENGST MULIG, BEST MULIG.",
 
   contact: {
     /** Vises øverst under Kontakt når utfylt */
@@ -26,7 +26,7 @@ window.CLUB_CONFIG = {
      * Én eller flere kontaktpersoner. Tomme felt vises ikke.
      * Kort uten noen utfylte felt hoppes over.
      */
-    "contact-persons": [
+    contactPersons: [
       {
         name: "Henning Gullaksen",
         title: "Barneidrettsansvarlig",
