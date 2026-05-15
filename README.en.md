@@ -30,7 +30,7 @@ The page explains what reporting means, what can be reported, how to use MittVar
 - Information sections and accordions with common questions
 - Links to external help services (Barnevernvakt, 116 111, etc.)
 - Contact accordion with main email/phone and contact person cards
-- Language switch between Norwegian and English (plain links, not JavaScript i18n)
+- Language switch between Norwegian and English
 
 `interactions.js` only handles UI: one open accordion at a time, scroll when needed, and compact layout on small screens.
 
@@ -58,7 +58,7 @@ The page explains what reporting means, what can be reported, how to use MittVar
 ### Recommended (Windows)
 
 ```powershell
-cd whistleblower-strict
+cd whistleblower
 .\serve.ps1
 ```
 
