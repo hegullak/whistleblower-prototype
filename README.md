@@ -30,7 +30,7 @@ Siden forklarer hva varsling er, hva som kan varsles, hvordan man bruker MittVar
 - Informasjonsseksjoner og accordion med vanlige spørsmål
 - Lenker til eksterne hjelpetjenester (Barnevernvakt, 116 111, osv.)
 - Kontaktaccordion med hoved-e-post/telefon og kontaktpersonkort
-- Språkbytte mellom norsk og engelsk (vanlige lenker, ikke JavaScript-i18n)
+- Språkbytte mellom norsk og engelsk
 
 `interactions.js` håndterer kun UI: én accordion åpen om gangen, scroll ved behov og kompakt layout på små skjermer.
 
