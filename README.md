@@ -126,13 +126,13 @@ window.CLUB_CONFIG = {
 
   mittVarselUrl: "https://portal.mittvarsel.no/skjema/...",
 
-  "club-slogan": "FLEST MULIG, LENGST MULIG, BEST MULIG.",
+  clubSlogan: "FLEST MULIG, LENGST MULIG, BEST MULIG.",
 
   contact: {
     mainEmail: "varsel@froya-fotball.no",
     mainPhone: "+47 971 77 772",
 
-    "contact-persons": [
+    contactPersons: [
       {
         name: "Ola Nordmann",
         title: "Barneidrettsansvarlig",
@@ -156,10 +156,10 @@ window.CLUB_CONFIG = {
 | `logoSrc` | Sti til logo (f.eks. `assets/min-logo.svg`) |
 | `tabTitleSuffix` | Del av fanetittel etter klubbnavn (vanligvis `MittVarsel`) |
 | `mittVarselUrl` | Full URL til klubbens MittVarsel-skjema |
-| `club-slogan` | Tekst i bunntekst. Tom streng `""` skjuler slagordet |
+| `clubSlogan` | Tekst i bunntekst. Tom streng `""` skjuler slagordet |
 | `contact.mainEmail` | Hoved-e-post under Kontakt (og `club-mail`-lenker) |
 | `contact.mainPhone` | Hovedtelefon under Kontakt. Tom = skjules. **Må være tekst i anførselstegn** |
-| `contact["contact-persons"]` | Liste med kontaktpersoner (kort) |
+| `contact.contactPersons` | Liste med kontaktpersoner (kort) |
 
 ### Felter per kontaktperson
 
@@ -194,7 +194,7 @@ window.CLUB_CONFIG = {
 | `club-mittvarsel` | Setter `href` på lenker til `mittVarselUrl` |
 | `club-mail` | Setter `href` til `mailto:` fra `contact.mainEmail` |
 | `club-mail-show` | (Valgfritt) Viser også e-postadressen som lenketekst |
-| `club-slogan` | Fyller bunntekst fra `club-slogan` |
+| `clubSlogan` | Fyller bunntekst fra `clubSlogan` i config |
 | `club-contact` | Tom `<div>` — kontaktkort bygges her av JavaScript |
 
 Eksempel:
@@ -253,7 +253,7 @@ Stiler ligger i `styles.css`. Accordion-ikoner er spørsmålstegn, unntatt **Kon
 Under accordion **Kontakt** vises:
 
 1. **Hovedkontakt** — `mainEmail` og `mainPhone` side om side (kun felt som er utfylt).
-2. **Kontaktpersonkort** — én boks per person i `contact-persons`, med:
+2. **Kontaktpersonkort** — én boks per person i `contactPersons`, med:
    - Navn på egen linje
    - Tittel 1 og tittel 2 på hver sin linje (uten ekstra luft mellom titlene)
    - Telefon og e-post på egne linjer
@@ -284,7 +284,7 @@ Etter deploy: verifiser at `club-config.js` og `club-init.js` lastes (nettverk-f
 | Hele kontaktseksjonen tom | Ofte syntaksfeil i `club-config.js` (f.eks. telefon uten `"anførselstegn"`). Åpne konsollen (F12) |
 | Port 4174 opptatt | Stopp gammel server — se [Hvis porten er opptatt](#hvis-porten-er-opptatt) |
 | Endringer i config vises ikke | Cache — bruk `serve.ps1` (no-cache) eller hard refresh |
-| E-post på kort mangler | Sjekk at `email` er utfylt i `contact-persons` og at filen er lagret |
+| E-post på kort mangler | Sjekk at `email` er utfylt i `contactPersons` og at filen er lagret |
 
 ---
 

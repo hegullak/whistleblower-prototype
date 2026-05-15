@@ -126,13 +126,13 @@ window.CLUB_CONFIG = {
 
   mittVarselUrl: "https://portal.mittvarsel.no/skjema/...",
 
-  "club-slogan": "FLEST MULIG, LENGST MULIG, BEST MULIG.",
+  clubSlogan: "FLEST MULIG, LENGST MULIG, BEST MULIG.",
 
   contact: {
     mainEmail: "varsel@froya-fotball.no",
     mainPhone: "+47 971 77 772",
 
-    "contact-persons": [
+    contactPersons: [
       {
         name: "Ola Nordmann",
         title: "Barneidrettsansvarlig",
@@ -156,10 +156,10 @@ window.CLUB_CONFIG = {
 | `logoSrc` | Path to logo (e.g. `assets/my-logo.svg`) |
 | `tabTitleSuffix` | Part of tab title after club name (usually `MittVarsel`) |
 | `mittVarselUrl` | Full URL to the club's MittVarsel form |
-| `club-slogan` | Footer slogan. Empty string `""` hides it |
+| `clubSlogan` | Footer slogan. Empty string `""` hides it |
 | `contact.mainEmail` | Main email under Contact (and `club-mail` links) |
 | `contact.mainPhone` | Main phone under Contact. Empty = hidden. **Must be a quoted string** |
-| `contact["contact-persons"]` | List of contact persons (cards) |
+| `contact.contactPersons` | List of contact persons (cards) |
 
 ### Fields per contact person
 
@@ -194,7 +194,7 @@ window.CLUB_CONFIG = {
 | `club-mittvarsel` | Sets link `href` to `mittVarselUrl` |
 | `club-mail` | Sets `href` to `mailto:` from `contact.mainEmail` |
 | `club-mail-show` | (Optional) Also shows the email address as link text |
-| `club-slogan` | Fills footer from `club-slogan` |
+| `clubSlogan` | Fills footer from `clubSlogan` in config |
 | `club-contact` | Empty `<div>` — contact cards are built here by JavaScript |
 
 Example:
@@ -253,7 +253,7 @@ Styles are in `styles.css`. Accordion icons are question marks, except **Contact
 Under the **Contact** accordion:
 
 1. **Main contact** — `mainEmail` and `mainPhone` side by side (only filled fields).
-2. **Contact person cards** — one box per person in `contact-persons`, with:
+2. **Contact person cards** — one box per person in `contactPersons`, with:
    - Name on its own line
    - Title 1 and title 2 on separate lines (no extra gap between the two titles)
    - Phone and email on separate lines
@@ -284,7 +284,7 @@ After deploy: verify that `club-config.js` and `club-init.js` load (browser Netw
 | Entire contact section empty | Often a syntax error in `club-config.js` (e.g. phone without quotes). Open the console (F12) |
 | Port 4174 in use | Stop the old server — see [If the port is in use](#if-the-port-is-in-use) |
 | Config changes not visible | Cache — use `serve.ps1` (no-cache) or hard refresh |
-| Email missing on card | Check that `email` is set in `contact-persons` and the file is saved |
+| Email missing on card | Check that `email` is set in `contactPersons` and the file is saved |
 
 ---
 

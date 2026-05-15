@@ -129,8 +129,8 @@
       if (mittVarselUrl) el.href = mittVarselUrl;
     });
 
-    const slogan = trim(cfg["club-slogan"]);
-    document.querySelectorAll("[club-slogan]").forEach((el) => {
+    const slogan = trim(cfg.clubSlogan);
+    document.querySelectorAll("[clubSlogan]").forEach((el) => {
       if (slogan) {
         el.textContent = slogan;
         el.hidden = false;
@@ -145,7 +145,7 @@
     const contact = cfg.contact || {};
     const mainEmail = trim(contact.mainEmail);
     const mainPhone = trim(contact.mainPhone);
-    const contactPersons = Array.isArray(contact["contact-persons"]) ? contact["contact-persons"] : [];
+    const contactPersons = Array.isArray(contact.contactPersons) ? contact.contactPersons : [];
     const t = labels();
 
     const fragment = document.createDocumentFragment();
