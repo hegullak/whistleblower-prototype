@@ -8,7 +8,6 @@ Statisk informasjonsside for varsling via [MittVarsel](https://portal.mittvarsel
 ## Innhold
 
 - [Hva siden gjør](#hva-siden-gjør)
-- [Krav](#krav)
 - [Prosjektstruktur](#prosjektstruktur)
 - [Kjøre lokalt](#kjøre-lokalt)
 - [Tilpasse for ny klubb](#tilpasse-for-ny-klubb)
