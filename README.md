@@ -1,11 +1,8 @@
-# whistleblower-strict
+# whistleblower-prototype
 
 **Norsk** · [English](README.en.md)
 
 Statisk informasjonsside for varsling via [MittVarsel](https://portal.mittvarsel.no/) — tilpasset idrettslag i Norges Idrettsforbund (NIF). Alt innhold ligger i HTML; klubbnavn, logo, MittVarsel-URL, slagord og kontakter styres fra én fil: `club-config.js`.
-
-Basert på [whistleblower](../whistleblower), men uten React, build-steg eller dynamisk i18n. Teksten redigeres direkte i `index.html` (norsk) og `en.html` (engelsk).
-
 ---
 
 ## Innhold
@@ -39,16 +36,6 @@ Siden forklarer hva varsling er, hva som kan varsles, hvordan man bruker MittVar
 
 ---
 
-## Krav
-
-- Moderne nettleser
-- For lokal utvikling: **Python 3** (anbefalt) eller Node.js (fallback via `npx http-server`)
-- Windows: PowerShell for `serve.ps1` (valgfritt, men enklest)
-
-Ingen `npm install`, ingen build.
-
----
-
 ## Prosjektstruktur
 
 | Fil / mappe | Formål |
@@ -77,28 +64,8 @@ cd whistleblower-strict
 
 Åpne:
 
-- Norsk: [http://127.0.0.1:4174/](http://127.0.0.1:4174/)
-- Engelsk: [http://127.0.0.1:4174/en.html](http://127.0.0.1:4174/en.html)
-
-Port **4174** er valgt fordi **4173** ofte brukes av det andre [whistleblower](../whistleblower)-prosjektet.
-
-`serve.ps1` sjekker om porten er opptatt, binder til `127.0.0.1`, og bruker `serve-dev.py` som sender `Cache-Control: no-store` (nyttig under utvikling).
-
-### Alternativ
-
-```bash
-python serve-dev.py 4174 127.0.0.1
-```
-
-### Hvis porten er opptatt
-
-```powershell
-Get-NetTCPConnection -LocalPort 4174 -State Listen | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }
-```
-
-Kjør bare **én** `serve.ps1` om gangen.
-
----
+- Norsk: [http://127.0.0.1:[portnummer]/](http://127.0.0.1:[portnummer]/)
+- Engelsk: [http://127.0.0.1:[portnummer]/en.html](http://127.0.0.1:[portnummer]/en.html)
 
 ## Tilpasse for ny klubb
 
@@ -290,6 +257,4 @@ Etter deploy: verifiser at `club-config.js` og `club-init.js` lastes (nettverk-f
 
 ## Lisens og videre utvikling
 
-Prosjektet er en forenklet variant av whistleblower-løsningen for klubber som ønsker full kontroll over HTML-tekst med minimal JavaScript.
-
-For mer dynamisk konfigurasjon (alt innhold fra én `config.js` med `i18n`), se [whistleblower](../whistleblower).
+Prosjektet for klubber som ønsker full kontroll over HTML-tekst med minimal JavaScript.
