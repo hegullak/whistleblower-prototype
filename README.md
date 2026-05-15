@@ -3,6 +3,7 @@
 **Norsk** · [English](README.en.md)
 
 Statisk informasjonsside for varsling via [MittVarsel](https://portal.mittvarsel.no/) — tilpasset idrettslag i Norges Idrettsforbund (NIF). Alt innhold ligger i HTML; klubbnavn, logo, MittVarsel-URL, slagord og kontakter styres fra én fil: `club-config.js`.
+
 ---
 
 ## Innhold
@@ -61,10 +62,12 @@ cd whistleblower-strict
 .\serve.ps1
 ```
 
-Åpne:
+Åpne (standard port **4174** fra `serve.ps1`):
 
-- Norsk: [http://127.0.0.1:[portnummer]/](http://127.0.0.1:[portnummer]/)
-- Engelsk: [http://127.0.0.1:[portnummer]/en.html](http://127.0.0.1:[portnummer]/en.html)
+- Norsk: [http://127.0.0.1:4174/](http://127.0.0.1:4174/)
+- Engelsk: [http://127.0.0.1:4174/en.html](http://127.0.0.1:4174/en.html)
+
+---
 
 ## Tilpasse for ny klubb
 
@@ -248,7 +251,7 @@ Etter deploy: verifiser at `club-config.js` og `club-init.js` lastes (nettverk-f
 |---------|---------|
 | Klubbnavn/kontakt vises ikke | Sjekk at `club-config.js` og `club-init.js` lastes (status 200). Hard refresh: Ctrl+Shift+R |
 | Hele kontaktseksjonen tom | Ofte syntaksfeil i `club-config.js` (f.eks. telefon uten `"anførselstegn"`). Åpne konsollen (F12) |
-| Port 4174 opptatt | Stopp gammel server — se [Hvis porten er opptatt](#hvis-porten-er-opptatt) |
+| Port 4174 opptatt | Stopp prosessen som lytter på porten (se feilmelding fra `serve.ps1`). Kjør bare én `serve.ps1` om gangen. |
 | Endringer i config vises ikke | Cache — bruk `serve.ps1` (no-cache) eller hard refresh |
 | E-post på kort mangler | Sjekk at `email` er utfylt i `contactPersons` og at filen er lagret |
 
