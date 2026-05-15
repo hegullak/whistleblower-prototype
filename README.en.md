@@ -8,7 +8,6 @@ Static information page for reporting concerns via [MittVarsel](https://portal.m
 ## Contents
 
 - [What this site does](#what-this-site-does)
-- [Requirements](#requirements)
 - [Project structure](#project-structure)
 - [Run locally](#run-locally)
 - [Customise for a new club](#customise-for-a-new-club)
