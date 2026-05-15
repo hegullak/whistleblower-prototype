@@ -3,6 +3,15 @@
  * Brødtekst i HTML; klubbnavn/kontakt fra club-config.js (club-init.js).
  */
 (function () {
+  function cleanIndexUrl() {
+    const match = location.pathname.match(/^(.*)\/index\.html$/i);
+    if (!match) return;
+    const root = `${match[1] || ""}/`;
+    history.replaceState(null, "", root + location.search + location.hash);
+  }
+
+  cleanIndexUrl();
+
   function ensureAccordionVisible(detailsEl) {
     if (!detailsEl) return;
     const detailsRect = detailsEl.getBoundingClientRect();
