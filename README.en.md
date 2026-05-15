@@ -1,11 +1,8 @@
-# whistleblower-strict
+# whistleblower-prototype
 
 **English** · [Norsk](README.md)
 
 Static information page for reporting concerns via [MittVarsel](https://portal.mittvarsel.no/) — aimed at sports clubs in the Norwegian Confederation of Sports (NIF). All page copy lives in HTML; club name, logo, MittVarsel URL, slogan and contacts are controlled from a single file: `club-config.js`.
-
-Based on [whistleblower](../whistleblower), but without React, a build step or dynamic i18n. Text is edited directly in `index.html` (Norwegian) and `en.html` (English).
-
 ---
 
 ## Contents
@@ -39,16 +36,6 @@ The page explains what reporting means, what can be reported, how to use MittVar
 
 ---
 
-## Requirements
-
-- Modern web browser
-- For local development: **Python 3** (recommended) or Node.js (fallback via `npx http-server`)
-- Windows: PowerShell for `serve.ps1` (optional but easiest)
-
-No `npm install`, no build step.
-
----
-
 ## Project structure
 
 | File / folder | Purpose |
@@ -77,28 +64,8 @@ cd whistleblower-strict
 
 Open:
 
-- Norwegian: [http://127.0.0.1:4174/](http://127.0.0.1:4174/)
-- English: [http://127.0.0.1:4174/en.html](http://127.0.0.1:4174/en.html)
-
-Port **4174** is used because **4173** is often taken by the other [whistleblower](../whistleblower) project.
-
-`serve.ps1` checks whether the port is in use, binds to `127.0.0.1`, and runs `serve-dev.py` with `Cache-Control: no-store` (helpful during development).
-
-### Alternative
-
-```bash
-python serve-dev.py 4174 127.0.0.1
-```
-
-### If the port is in use
-
-```powershell
-Get-NetTCPConnection -LocalPort 4174 -State Listen | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }
-```
-
-Run only **one** `serve.ps1` at a time.
-
----
+- Norwegian: [http://127.0.0.1:[port number]/](http://127.0.0.1:[port number]/)
+- English: [http://127.0.0.1:[port number]/en.html](http://127.0.0.1:[port number]/en.html)
 
 ## Customise for a new club
 
@@ -290,6 +257,4 @@ After deploy: verify that `club-config.js` and `club-init.js` load (browser Netw
 
 ## Licence and further development
 
-This project is a simplified variant of the whistleblower solution for clubs that want full control over HTML copy with minimal JavaScript.
-
-For more dynamic configuration (all content from one `config.js` with `i18n`), see [whistleblower](../whistleblower).
+A project for clubs that want full control over HTML copy with minimal JavaScript.
